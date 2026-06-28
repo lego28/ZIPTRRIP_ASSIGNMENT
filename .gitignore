@@ -5,4 +5,11 @@ build/
 *.log
 .DS_Store
 .kiro/
+!.kiro/
+.kiro/*
+!.kiro/specs/
+.kiro/specs/*
+!.kiro/specs/todo-application/
+.kiro/specs/todo-application/*
+!.kiro/specs/todo-application/*.md
 .vscode/
