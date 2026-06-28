@@ -1,0 +1,73 @@
+/* =============================================
+   TodosListPage styles
+   ============================================= */
+
+.list-page {
+  min-height: 100vh;
+  background-color: var(--color-bg);
+}
+
+.list-page__header {
+  background: linear-gradient(135deg, var(--color-primary) 0%, #7c3aed 100%);
+  color: #fff;
+  padding: 32px 24px 28px;
+  text-align: center;
+}
+
+.list-page__title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.list-page__subtitle {
+  font-size: 1rem;
+  opacity: 0.85;
+}
+
+.list-page__main {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 24px 16px 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.list-page__form-section {
+  /* no extra styles needed, todo-form handles its own look */
+}
+
+.list-page__list-section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.list-page__controls {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.list-page__count {
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  font-weight: 500;
+}
+
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+@media (max-width: 600px) {
+  .list-page__header {
+    padding: 24px 16px 20px;
+  }
+
+  .list-page__title {
+    font-size: 1.5rem;
+  }
+}

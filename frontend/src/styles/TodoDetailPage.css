@@ -1,0 +1,143 @@
+/* =============================================
+   TodoDetailPage styles
+   ============================================= */
+
+.detail-page {
+  min-height: 100vh;
+  background-color: var(--color-bg);
+}
+
+.detail-page__nav {
+  padding: 16px 24px;
+  border-bottom: 1px solid var(--color-border);
+  background: var(--color-surface);
+}
+
+.detail-page__main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 28px 16px 48px;
+}
+
+.detail-page--error,
+.detail-page--loading {
+  padding: 24px;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.detail-page--error .back-btn,
+.detail-page--loading .back-btn {
+  margin-bottom: 16px;
+}
+
+.detail-page--error .alert,
+.detail-page--error .loading-wrapper {
+  margin-top: 16px;
+}
+
+/* ── Detail Card ── */
+.detail-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 28px;
+  box-shadow: var(--shadow-md);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.detail-card__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.detail-card__title {
+  font-size: 1.625rem;
+  font-weight: 700;
+  color: var(--color-text);
+  line-height: 1.3;
+  word-break: break-word;
+  flex: 1;
+}
+
+.detail-card__actions {
+  display: flex;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.detail-card__badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.detail-card__badges .badge {
+  font-size: 0.8125rem;
+  padding: 4px 12px;
+}
+
+.detail-card__description {
+  font-size: 0.9375rem;
+  color: var(--color-text);
+  line-height: 1.7;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.detail-card__description--empty {
+  color: var(--color-text-muted);
+  font-style: italic;
+}
+
+/* ── Timestamps ── */
+.detail-card__timestamps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 12px;
+  padding-top: 8px;
+  border-top: 1px solid var(--color-border);
+}
+
+.detail-timestamp {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.detail-timestamp__label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-text-muted);
+}
+
+.detail-timestamp__value {
+  font-size: 0.9375rem;
+  color: var(--color-text);
+}
+
+/* ── Responsive ── */
+@media (max-width: 600px) {
+  .detail-card {
+    padding: 20px 16px;
+  }
+
+  .detail-card__header {
+    flex-direction: column;
+  }
+
+  .detail-card__title {
+    font-size: 1.375rem;
+  }
+
+  .detail-card__actions {
+    width: 100%;
+    justify-content: flex-start;
+  }
+}
