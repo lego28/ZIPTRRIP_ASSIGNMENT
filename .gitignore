@@ -4,5 +4,9 @@ build/
 .env
 *.log
 .DS_Store
-.kiro/
+.kiro/.config.kiro
+.kiro/*.log
+.kiro/*.tmp
+.kiro/.cache/
+.kiro/specs/*
 .vscode/
